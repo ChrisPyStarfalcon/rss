@@ -1,0 +1,8 @@
+prefix=/home/users/parrchri/turtlebot/catkin_ws_rss/devel
+
+Name: rss2_msgsrv_pkg
+Description: Description of rss2_msgsrv_pkg
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

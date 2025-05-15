@@ -1,0 +1,4 @@
+<launch>
+    <node name="pub_node" pkg="rss_linux_pkg" type="chrisparr_publisher_line.py" output="screen"/>
+    <node name="sub_node" pkg="rss_linux_pkg" type="chrisparr_subscriber.py" output="screen"/>
+</launch>

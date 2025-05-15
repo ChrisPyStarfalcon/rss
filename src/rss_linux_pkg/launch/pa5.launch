@@ -1,0 +1,4 @@
+<launch>
+    <include file ="$(find turtlebot3_gazebo)/launch/turtlebot3_empty_world.launch"/>
+    <include file ="$(find rss_linux_pkg)/launch/pa-4.launch"/>
+</launch>
