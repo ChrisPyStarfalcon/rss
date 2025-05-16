@@ -1,0 +1,10 @@
+(cl:defpackage rss_linux_pkg-srv
+  (:use )
+  (:export
+   "TURTLEBOT_MOVE_SQUARE"
+   "<TURTLEBOT_MOVE_SQUARE-REQUEST>"
+   "TURTLEBOT_MOVE_SQUARE-REQUEST"
+   "<TURTLEBOT_MOVE_SQUARE-RESPONSE>"
+   "TURTLEBOT_MOVE_SQUARE-RESPONSE"
+  ))
+

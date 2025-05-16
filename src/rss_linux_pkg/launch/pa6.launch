@@ -1,0 +1,4 @@
+<launch>
+    <node name="move_square_server" pkg="rss_linux_pkg" type="move_square_server.py" output="screen"/>
+    <node name="move_square_client" pkg="rss_linux_pkg" type="move_square_client.py" output="screen"/>
+</launch>

@@ -3,6 +3,6 @@ prefix=/home/users/parrchri/turtlebot/catkin_ws_rss/devel
 Name: rss_linux_pkg
 Description: Description of rss_linux_pkg
 Version: 0.0.0
-Cflags: 
+Cflags: -I/home/users/parrchri/turtlebot/catkin_ws_rss/devel/include
 Libs: -L${prefix}/lib 
-Requires: geometry_msgs nav_msgs rospy std_msgs message_runtime
+Requires: rospy std_msgs message_runtime
