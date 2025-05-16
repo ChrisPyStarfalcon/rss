@@ -1,4 +1,9 @@
 <launch>
     <include file ="$(find turtlebot3_gazebo)/launch/turtlebot3_empty_world.launch"/>
-    <include file ="$(find rss_linux_pkg)/launch/pa-4.launch"/>
+    <node name="msgsrv_node_cp_srv" pkg="rss_linux_pkg" type="cp_srv_server.py" output="screen"/>
+    <node name="msgsrv_node_cp_cl" pkg="rss_linux_pkg" type="cp_srv_client.py" output="screen"/>
+    <node name="msgsrv_node_srv" pkg="rss_linux_pkg" type="srv_server.py" output="screen"/>
+    <node name="msgsrv_node_cl" pkg="rss_linux_pkg" type="srv_client.py" output="screen"/>
+    <node name="msgsrv_node_pub" pkg="rss_linux_pkg" type="msg_pub.py" output="screen"/>
+    <node name="msgsrv_node_sub" pkg="rss_linux_pkg" type="msg_sub.py" output="screen"/>
 </launch>

@@ -5,4 +5,4 @@ Description: Description of rss_linux_pkg
 Version: 0.0.0
 Cflags: 
 Libs: -L${prefix}/lib 
-Requires: 
+Requires: geometry_msgs nav_msgs rospy std_msgs message_runtime

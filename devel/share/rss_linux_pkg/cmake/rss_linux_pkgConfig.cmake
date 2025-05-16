@@ -177,7 +177,7 @@ foreach(library ${libraries})
   endif()
 endforeach()
 
-set(rss_linux_pkg_EXPORTED_TARGETS "")
+set(rss_linux_pkg_EXPORTED_TARGETS "rss_linux_pkg_generate_messages_cpp;rss_linux_pkg_generate_messages_eus;rss_linux_pkg_generate_messages_lisp;rss_linux_pkg_generate_messages_nodejs;rss_linux_pkg_generate_messages_py")
 # create dummy targets for exported code generation targets to make life of users easier
 foreach(t ${rss_linux_pkg_EXPORTED_TARGETS})
   if(NOT TARGET ${t})
@@ -185,7 +185,7 @@ foreach(t ${rss_linux_pkg_EXPORTED_TARGETS})
   endif()
 endforeach()
 
-set(depends "")
+set(depends "geometry_msgs;nav_msgs;rospy;std_msgs;message_runtime")
 foreach(depend ${depends})
   string(REPLACE " " ";" depend_list ${depend})
   # the package name of the dependency must be kept in a unique variable so that it is not overwritten in recursive calls
@@ -214,7 +214,7 @@ foreach(depend ${depends})
   _list_append_deduplicate(rss_linux_pkg_EXPORTED_TARGETS ${${rss_linux_pkg_dep}_EXPORTED_TARGETS})
 endforeach()
 
-set(pkg_cfg_extras "")
+set(pkg_cfg_extras "rss_linux_pkg-msg-extras.cmake")
 foreach(extra ${pkg_cfg_extras})
   if(NOT IS_ABSOLUTE ${extra})
     set(extra ${rss_linux_pkg_DIR}/${extra})
